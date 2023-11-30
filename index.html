@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Digi Market - Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="black">
+        <meta name="robot" content="index">
+        <meta name="application-name" content="Blog 101">
+        <meta name="author" content="aj codes">
+        <meta name="description" content="Purchase your glossory stuff from us at Blog 101">
+        <meta name="keyword" content="buy food , cheap food to buy online">
+        <meta http-equiv="refresh" content="#">
+        <link rel="shortcut icon" type="image/png" href="#">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="indexjs.js"></script>
+        <script src="security.js"></script>
+<script>
+
+</script>
+    </head>
+
+    <body>
+       
+        <nav>
+                <label class="logo">Digi Market</label><img src="images/logo.png" title="This Logo Is Copyright Protected" alt="Blog101 Logo">
+           <ul id="menulist">
+           
+          <li><a href="#" role="link" target="_self">Home</a></li>
+          <li><a href="#" role="link" target="_self">News</a></li>
+          <li><a href="#" role="link" target="_self">Blog</a></li>
+          <li><a href="#" role="link" target="_self">Feedback</a></li>
+          <li><a href="#" role="link" target="_self">About</a></li>
+          <li><a href="#" role="link" target="_self">Contact</a></li>
+           </ul>
+
+           <label>
+               <img src="images/whiteMenuIcon.png" id="icon" onclick="togglemenu()">
+           </label>
+           </nav>
+           <div class="cont">
+           <div class="backdiv">
+
+           </div>
+</div>
+            
+
+
+
+<div id="buttons">
+
+    <div class="button" onclick="clear()">
+        <a class="button_links" href="#" title="Explore The Environment Of Blog101">
+            <h2>Explore</h2>
+        </a>
+    </div>
+
+    <div class="button" onclick="popupOne()">
+        <a class="button_links" href="#" title="LogIn To Your Allocated Server">
+            <h2>Log In</h2>
+        </a>
+    </div>
+
+    
+    <div class="button" onclick="popupTwo()">
+        <a class="button_links" href="#" title="SignIn To  Become A Member Of The Blog101 Family">
+            <h2>Sign In</h2>
+        </a>
+    </div>
+
+</div>
+
+
+<!-- log begins -->
+<div id="log">
+    <div class="logHead">
+       <em>LogIn</em>
+    </div>
+    <form name="passPhrase" role="form" id="passPhrase" action="#" method="POST" enctype="application/x-www-form-urlencoded" 
+    formnovalidate>
+
+        <div class="children">
+        <label>
+            <span id="gSpan" style="font-size:18px;margin-left:-53%; transition:0.3s">Gmail </span >
+            <br>
+            <input type="gmail" name="gInput" id="gInput" role="gmail input" alt="Gmail input box" onfocus="gAnime()"
+            title="Enter Gmail address Only" placeholder="     Enter Gmail" autocorrect="on" size="40" 
+            style="height:32px;" required>
+        </label>
+        </div>
+
+        <div class="children">
+        <label>
+            <span id="pSpan" style="font-size:18px ; margin-left:-45%; transition:0.3s">Password </span>
+            <br>
+            <input type="password" name="pInput" id="pInput" role="password input" alt="Password Input box" onfocus="pAnime()"
+            title="Enter A Strong Password" placeholder="     Enter Password" minLength="6" maxLength="15" size="40"
+             style="height:32px;" required>
+        </label>
+        </div>
+
+        <Button class="children" form="passPhrase" for="pInput , gInput" type="submit" name="submit"
+         id="submit" formaction="#" formenctype="application/x-www-form-urlencoded" 
+        formmethod="GET">
+            LogIn
+        </Button>
+    </form>
+
+    <br><br>
+
+    <div id="more">
+        <ul>
+            <li>
+                <p style="padding-top:7px">
+                    Via Phone
+                </p>
+            </li>
+            <li>
+                <p style="padding-top:7px">
+                    Via Google
+                </p>
+            </li>
+        </ul>
+    </div>
+<br>
+    <button class="option" id="option" name="option" type="button" role="dialog" alt="more option" title="Provide more option"
+     formaction="post" formaction="#" formenctype="application/x-www-form-urlencoded" onclick="option()">
+        Forgot Password
+    </button>
+
+    <script>
+            var bottoms=document.getElementById("more");
+            bottoms.style.display="none";
+
+            function option(){
+            if(bottoms.style.display=="none"){
+                bottoms.style.display="block";
+            }
+            else{
+                bottoms.style.display="none";
+            }
+            };
+
+            var passText=document.getElementById("pSpan");
+            var gText=document.getElementById("gSpan");
+            passText.style.marginLeft="-45%";
+            gText.style.marginLeft="-53%";
+
+            function pAnime(){
+                if(passText.style.marginLeft=="-45%"){
+                    passText.style.marginLeft="0%";
+                }
+                else{
+                    passText.style.marginLeft="-45%";
+                }
+            };
+
+            function gAnime(){
+                if(gText.style.marginLeft=="-53%"){
+                    gText.style.marginLeft="0%";
+                }
+                else{
+                    gText.style.marginLeft="-53%";
+                }
+            }
+
+
+    </script>
+</div>
+<!-- end of log -->
+
+
+<!-- sign -->
+<div id="sign">
+    <div class="logHead">
+        <em>SignIn</em>
+    </div>
+
+     <form name="signForm" role="form" id="signForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
+        
+        <div class="signChildren">
+        <label>
+            <span id="fspan" name="fspan" style="margin-left:-30%;" >
+                First Name
+            </span>
+            <br>
+            <input name="firstNameInput" type="text" role="first Name input" id="firstNameInput" alt="First Name Input"
+             title="Enter name in the space provided" size="30" style="height:32px" required placeholder="Enter Name" autocorrect="on"
+             onfocus="firstNameAnime()" oninput="firstName()">
+        </label>
+        </div>
+
+        <div class="signChildren">
+        <label>
+            <span id="mspan" name="mspan" style="margin-left:-50%" >
+                Middle Name
+            </spanid="mspan" name="mspan">
+            <br>
+            <input name="middleNameInput" type="text" id="middleNameInput" role="middle name input" autocorrect="on" alt="Middle Name Input" 
+            title="Enter Middle Name In The Space Provided" size="25" style="height:32px ; text-align:center;margin-right:20px" 
+            placeholder="Enter Middle Name" onfocus="middleNameAnime()">
+        </label>
+
+        <label>
+            <span id="lspan" name="lspan" style="margin-left:-45%" >
+                Last Name
+            </span>
+            <br>
+            <input name="lastNameInput" type="text" id="lastNameInput" role="last name input" autocorrect="on" alt="Last Name Input" 
+            title="Enter Last Name In The Space Provided" size="25" style="height:32px ; text-align:center; margin-left:20px" 
+            placeholder="Enter Last Name" onfocus="lastNameAnime()" required>
+        </label>
+    </div>
+
+<!-- problem with the phone syntax -->
+    <div class="signChildren">
+        <label>
+            <span id="phspan" name="phspan" style="margin-left:-37%" >
+                Phone
+            </span>
+            <br>
+            <input name="phoneInput" type="tel" id="phoneInput" role="tel input" autocorrect="on" alt="Telephone Input" 
+            title="Enter Phone In The Space Provided" size="30" style="height:32px ;text-align:center" minlength="10" maxlength="13"
+            placeholder="Enter Phone" 
+            onfocus="phoneInputAnime()" required>
+        </label>
+    </div>
+
+    <div class="signChildren">
+        <label>
+            <span id="gmspan" name="gmspan" style="margin-left:-38%" >
+                Gmail
+            </span>
+            <br>
+            <input name="gmailInput" type="gmail" id="gmailInput" role="gmail input" autocorrect="on" alt="Gmail Input" 
+            title="Enter Gmail In The Space Provided" size="30" style="height:32px ; text-align:center" placeholder="Enter gmail"
+             onfocus="gmailInputAnime()" required>
+        </label>
+    </div>
+
+    <div class="signChildren">
+        <label>
+            <span id="paspan" name="paspan" style="margin-left:-14%">
+                Prefered PassPhrase
+            </span>
+            <br>
+            <input name="passInput" type="password" id="passInput" role="password input" autocorrect="on" alt="Password Input" 
+            title="Enter Your New Password The Space Provided" size="30" style="height:32px ; text-align:center" 
+            placeholder="Enter PassPhrase" onfocus="passInputAnime()" required>
+        </label>
+    </div>
+
+                <button type="submit" id="signButton" name="signButton" role="submit" 
+                for="#firstNameInput , #middleNameInput , #lastNameInput ,
+                #phoneInput , #gmailInput , #passInput" 
+                form="signForm" formenctype="application/x-www-form-urlencoded" 
+                formaction="#" formmethod="post" alt="signIn" title="click to submit your signIn forms">
+                Sign In
+            </button>
+    </form>
+    <div class="signChildren">
+        <label>
+            <span id="sspan"  name="sspan" style="margin-left:-32%">
+                Prefered Name
+            </span>
+            <br>
+            <form name="SE" id="SE" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <input name="searchBox" list="nameDatabase" type="text" role="search" id="searchBox" alt="search box"
+                 title="Search If Name Had Already Been Taken" size="30" style="height:32px ; text-align:center" 
+                 placeholder=" &#128269;Search Name" minlength="5" maxlength="15" autocorrection="on" onfocus="searchInputAnime()"
+                 required>
+
+                 <button type="submit" id="claimButton" name="claimButton" role="button" 
+                 alt="Claim Name Button" title="Click To Claim Name" form="SE" for="searchBox" formaction="#"
+                 formmethod="post" formenctype="application/x-www-form-urlencoded">
+                    Claim
+                </button>
+            </form>
+        </label>
+        <datalist id="nameDatabase">
+            <option value="aj codes" >
+                <option value="emmanuella">
+                    <option value="maame" >
+                        <option value="safoa">
+                            <option value="oware">
+            </datalist>
+    </div>
+</div>
+
+<script>
+    var searchText=document.getElementById("sspan");
+searchText.style.marginLeft="-32%";
+function searchInputAnime(){
+    if(searchText.style.marginLeft=="-32%"){
+            searchText.style.marginLeft="0%";
+        }
+        else{
+            searchText.style.marginLeft="-32%";
+        }
+    };
+
+var firstNameText=document.getElementById("fspan");
+firstNameText.style.marginLeft="-30%";
+function firstNameAnime(){
+    if(firstNameText.style.marginLeft=="-30%")
+    {
+  firstNameText.style.marginLeft="0%";
+    }
+    else{
+        firstNameText.style.marginLeft="-30%";
+    }
+};
+
+var middleNameText=document.getElementById("mspan");
+middleNameText.style.marginLeft="-50%";
+function middleNameAnime(){
+    if(middleNameText.style.marginLeft=="-50%")
+    {
+        middleNameText.style.marginLeft="0%";
+    }
+    else{
+        middleNameText.style.marginLeft="-50%";
+    }
+
+};
+
+var lastNameText=document.getElementById("lspan");
+lastNameText.style.marginLeft="-45%";
+function lastNameAnime(){
+    if(lastNameText.style.marginLeft=="-45%")
+    {
+        lastNameText.style.marginLeft="0%";
+    }
+    else{
+        lastNameText.style.marginLeft="-45%";
+    }
+};
+
+
+var phoneInputText=document.getElementById("phspan");
+phoneInputText.style.marginLeft="-37%";
+function phoneInputAnime(){
+    if(phoneInputText.style.marginLeft=="-37%")
+    {
+        phoneInputText.style.marginLeft="0%";
+    }
+    else{
+        phoneInputText.style.marginLeft="-37%";
+    }
+};
+
+var gmailInputText=document.getElementById("gmspan");
+gmailInputText.style.marginLeft="-38%";
+function gmailInputAnime(){
+    if(gmailInputText.style.marginLeft=="-38%")
+    {
+        gmailInputText.style.marginLeft="0%";
+    }
+    else{
+        gmailInputText.style.marginLeft="-38%";
+    }
+};
+
+var passInputText=document.getElementById("paspan");
+passInputText.style.marginLeft="-14%";
+function passInputAnime(){
+        if(passInputText.style.marginLeft=="-14%")
+        {
+            passInputText.style.marginLeft="0%";
+        }
+        else{
+            passInputText.style.marginLeft="-14%";
+        }
+};
+</script>
+<!-- end of sign -->
+
+<script>
+    var menulist=document.getElementById("menulist");
+    var vanish=document.getElementById("buttons");
+    menulist.style.maxHeight="0px";
+
+
+    function togglemenu()
+    {
+
+        if(menulist.style.maxHeight=="0px")
+        {
+            menulist.style.maxHeight="500px"
+            menulist.style.display="block";
+            menulist.style.opacity="0.9";
+            vanish.style.display="none";
+           // menulist.style.transition=".5s";
+        }
+        else
+        {
+         menulist.style.maxHeight="0px";
+        menulist.style.display="none";
+        vanish.style.display="block";                // menulist.style.transition=".5s";
+        }
+    }
+</script>
+<script>
+    var input=document.getElementById("log");
+    input.style.maxHeight="0px";
+    input.style.display="none";
+    
+    var secondInput=document.getElementById("sign");
+    secondInput.style.maxHeight="0px";
+    secondInput.style.display="none";
+    
+    
+    function popupOne()
+                {
+                    if(input.style.maxHeight=="0px" && input.style.display=="none")
+                    {
+                        input.style.maxHeight="700px";
+                        input.style.display="block";
+                        input.style.transition="0.5s";
+                        secondInput.style.maxHeight="0px";
+                        secondInput.style.display="none";
+                    }
+                    else
+                    {
+                     input.style.maxHeight="0px";
+                    input.style.transition="0.5s";
+                    input.style.display="none";
+                    }
+                }
+    
+                function popupTwo()
+                {
+                    if(secondInput.style.maxHeight=="0px" && secondInput.style.display=="none")
+                    {
+                        secondInput.style.maxHeight="700px";
+                        secondInput.style.display="block";
+                        secondInput.style.transition="0.5s";
+                        input.style.maxHeight="0px";
+                        input.style.display="none";
+                    }
+                    else
+                    {
+                     secondInput.style.maxHeight="0px";
+                    secondInput.style.display="none";
+                    secondInput.style.transition="0.5s";
+                    }
+                }
+    </script>
+    
+     </body>
+</html>
