@@ -1,0 +1,28 @@
+.send-box{
+    width:100%;
+    height:400px;
+    margin-top:150px;
+    display:inline-flex;
+    color:white;
+}
+
+.options{
+    width:23%;
+    height:100%;
+    background-color:black;
+    opacity:0.8;
+    margin-left:250px;
+    border-radius:20px;
+}
+
+.content{
+    width:100%;
+    height:80%;
+}
+
+.dispay1{
+    width:800px;
+    height:600px;
+    background-color:black;
+    opacity:0.9;
+}
